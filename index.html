@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Agrotóxicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo com link para voltar ao início -->
+    <div class="logo-container">
+        <a href="https://localhost/AgroClasen_agrotoxicos/index.html"><img src="res/logo_loja.png" alt="Logo da Loja" class="logo"></a>
+    </div>
+
+    <h1>Consulta de Agrotóxicos</h1>
+    
+    <div class="category-container">
+        <button class="category" onclick="showCategory('herbicida')">Herbicidas</button>
+        <button class="category" onclick="showCategory('fungicida')">Fungicidas</button>
+        <button class="category" onclick="showCategory('inseticida')">Inseticidas</button>
+        <button class="category" onclick="showCategory('acaricida')">Acaricidas</button>
+        <button class="category" onclick="showCategory('nematicida')">Nematicidas</button>
+    </div>
+
+    <div id="product-list" class="hidden">
+        <h2 id="category-title"></h2>
+        <ul id="products"></ul>
+    </div>
+
+    <div id="product-details" class="hidden">
+        <h2>Detalhes do Produto</h2>
+        <p><strong>Nome:</strong> <span id="product-name"></span></p>
+        <p><strong>Dosagem por Hectare:</strong> <span id="product-dosage-ha"></span></p>
+        <p><strong>Dosagem para 20 litros:</strong> <span id="product-dosage-20l"></span></p>
+        <p><strong>Descrição:</strong> <span id="product-description"></span></p>
+        <button onclick="goBack()">Voltar</button>
+    </div>
+
+    <footer>
+        <p>© 2024 Wiliam Mateus Weber</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
